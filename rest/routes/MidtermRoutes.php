@@ -55,9 +55,7 @@ Flight::route('GET /midterm/investor_email/@email', function($email){
     */
 });
 
-// Flight::route("GET /midterm/investor/@share_class_id", function($share_class_id){
-
-Flight::route("GET /midterm/investor", function(){
+Flight::route("GET /midterm/investor/@share_class_id", function($share_class_id){
 
     Flight::json(Flight::midtermService()->investors());
 
